@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva3 Django</title>
+     {% load static %}
+     <link rel="stylesheet" type="text/css" href="../static/crear.css">
+</head>
+<body>
+       <header>
+        <div class="container-navbar">
+        <nav class="navbar container">
+        <i class="fa-solid fa-bars"></i>
+        <ul class="menu">
+            <li><a href="http://127.0.0.1:8000/">Inicio</a></li>
+            <li><a href="./productos">Productos</a></li>
+            <li><a href="./nosotros">Nosotros</a></li>
+            <li><a href="./sucursales">Sucursales</a></li>
+            <li><a href="./contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+   <h1>CREAR NUEVO PRODUCTO</h1>
+<div class="card">
+    <div class="card-body">
+       
+
+        {% include 'form.html' %}
+
+    </div>
+</div>
+
+
+</body>
+</html>

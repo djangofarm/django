@@ -1,0 +1,20 @@
+[
+    {   "id": 1112231,
+        "nombre": "platanos",
+        "descripcion": "1 kilo de platanos amarillos",
+        "precio": 1200,
+        "disponibilidad": "si"
+    },
+    {   "id": 1112233,
+        "nombre": "peras",
+        "descripcion": "1 kilo de peras",
+        "precio": 1500,
+        "disponibilidad": "no"
+    },
+    {   "id": 1112234,
+    "nombre": "kiwi",
+    "descripcion": "1 kilo de kiwi maduro",
+    "precio": 2000,
+    "disponibilidad": "si"
+}
+]

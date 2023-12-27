@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva3 Django</title>
+    {% load static %}
+     <link rel="stylesheet" type="text/css" href="../static/nosotros.css">
+</head>
+<body>
+       <header>
+        <div class="container-navbar">
+        <nav class="navbar container">
+        <i class="fa-solid fa-bars"></i>
+        <ul class="menu">
+            <li><a href="http://127.0.0.1:8000/">Inicio</a></li>
+            <li><a href="./productos">Productos</a></li>
+            <li><a href="./nosotros">Nosotros</a></li>
+            <li><a href="./sucursales">Sucursales</a></li>
+            <li><a href="./contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+{% load static%}
+    <section class="contenedor seccion">
+        <h2 class="fw-300 centrar-texto"><b>Sobre Nosotros</h2></b>
+
+        <div class="iconos-nosotros">
+
+            <div class="iconos">
+
+                <img src="{% static "imagenes/frutas2.jpeg" %}" alt="alimentos">
+                <h3 class="encabezado mayusculas"><b>Venta de Alimentos</b></h3>
+                <p>Nos dedicamos a la venta de alimentos como frutas y verduras</p>
+            </div>
+
+            <div class="iconos">
+                <img src="{% static "imagenes/bodega.jpg" %}" alt="alimentos">
+                <h3 class="encabezado mayusculas"><b>Administracion de Alimentos y Bodegas</b> </h3>
+                <p>Administramos bodegas de alimentos en distintas partes de la quinta región</p>
+            </div>
+
+            <div class="iconos">
+                <img src="{% static "imagenes/precio.jpg" %}" alt="alimentos">
+                <h3 class="encabezado mayusculas"><b>El mejor precio</b></h3>
+                <p>Contamos con los precios mas bajos acorde al mercado</p>
+            </div>
+        </div> 
+        <h4>Contactanos a través de nuestro formulario de contacto en el menú o visita nuestras sucursales</h4>
+        </section>
+
+
+</body>
+</html>

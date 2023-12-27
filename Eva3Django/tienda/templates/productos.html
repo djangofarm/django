@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva3 Django</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="../static/productos.css">
+</head>
+<body>
+       <header>
+        <div class="container-navbar">
+        <nav class="navbar container">
+        <i class="fa-solid fa-bars"></i>
+        <ul class="menu">
+            <li><a href="http://127.0.0.1:8000/">Inicio</a></li>
+            <li><a href="./productos">Productos</a></li>
+            <li><a href="./nosotros">Nosotros</a></li>
+            <li><a href="./sucursales">Sucursales</a></li>
+            <li><a href="./contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+        <h1>LISTA DE PRODUCTOS</h1>
+        <div class="btn-agregar">
+        <a name="" id="" class="btn" href="{% url 'crearProducto'%}" role="button">Agregar nuevo producto</a>
+    </div>
+        <table border>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Disponibilidad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for producto in productos %}
+                <tr>
+                    <td><b>{{producto.nombre}}</b></td>
+                    <td><b>{{producto.descripcion}}</b></td>
+                    <td><b>{{producto.precio}}</b></td>
+                    <td><b>{{producto.disponibilidad}}</b></td>
+                    <td>
+                        <a name="" id="" class="btn-editar" href="{% url 'editarProducto' producto.id %}" role="button"><b>Editar</b></a>  
+                        <a name="" id="" class="btn-eliminar" href="{% url 'eliminarProducto' producto.id %}" role="button"><b>Eliminar</b></a></td>
+                </tr>
+                {% endfor %}
+               
+            </tbody>
+          
+        </table>
+
+
+
+</body>
+</html>
